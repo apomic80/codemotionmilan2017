@@ -1,27 +1,11 @@
-# Codemotionmilano
+# Codemotion Milano 2017
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
+Demo della sessione a Codemotion Milano 2017 sullo sviluppo di applicazioni Desktop con Angular e Electron
 
-## Development server
+## Avvio applicazione
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Eseguire `npm install` per scaricare le librerie necessarie al progetto e `npm run electron-build` per la generazione della distribuzione angular e l'avvio di electron. Eseguire npm run electron` se si modifica solamente il main.js.
 
-## Code scaffolding
+## Creazione pacchetto di distribuzione per i diversi sistemi operativi
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Eseguire `npm install -g electron-packager` per installare il pacchettizzatore di electron, eseguire `electron-packager . --platform=win32` per il pacchetto windows. Per le opzioni del packager consulatare la guida ufficiale [Electron Packager](https://github.com/electron-userland/electron-packager).
